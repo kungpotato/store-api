@@ -11,7 +11,7 @@ var mongoose = require('mongoose'),
     });
   };
 
-  exports.create_an_oder = function(req, res) {
+  exports.create_an_order = function(req, res) {
     var new_order = new Order(req.body);
     new_order.save(function(err, order) {
       if (err)
