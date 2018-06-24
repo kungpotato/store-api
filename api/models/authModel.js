@@ -2,7 +2,11 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var AuthSchema = new Schema({
+var UserAuthSchema = new Schema({
+    id: {
+      type: Number,
+      required: 'Kindly enter the id'
+    },
     username: {
       type: String,
       required: 'Kindly enter the username'
@@ -13,4 +17,4 @@ var AuthSchema = new Schema({
     }
   });
 
-  module.exports = mongoose.model('Auths', AuthSchema);
+  module.exports = mongoose.model('UserAuths', UserAuthSchema);
