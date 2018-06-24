@@ -1,7 +1,6 @@
 'use strict';
-
-var mongoose = require('mongoose'),
-  Order = mongoose.model('Orders');
+var mongoose = require('mongoose');
+var  Order = mongoose.model('Orders');
 
   exports.list_all_orders = function(req, res) {
     Order.find({}, function(err, order) {
