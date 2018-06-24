@@ -16,5 +16,5 @@ module.exports = function(app) {
 
   // User Routes
   app.route('/auths')
-  .post(User.create_an_user);
+  .get(User.list_all_users);
 };
