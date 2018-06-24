@@ -5,6 +5,7 @@ var cors = require('cors');
   port = process.env.PORT || 8000;
   mongoose = require('mongoose');
   Order = require('./api/models/storeModel'); //created model loading here
+  User = require('./api/models/authModel');
   bodyParser = require('body-parser');
 
 // mongoose instance connection url connection
